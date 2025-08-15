@@ -1,7 +1,5 @@
 {
-  "buildCommand": "",
-  "outputDirectory": ".",
-  "installCommand": "",
+  "functions": {},
   "rewrites": [
     {
       "source": "/projects",
