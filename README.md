@@ -1,5 +1,6 @@
 # Personal Portfolio - Luis Martinez Ferraez
 
+<<<<<<< HEAD
 A modern, responsive personal portfolio website showcasing projects, experience, and skills in data analysis and web development.
 
 ## 🌟 Features
@@ -56,3 +57,6 @@ MIT License - feel free to use this template for your own portfolio!
 ---
 
 Built with ❤️ by Luis Martinez Ferraez
+=======
+A modern, responsive personal portfolio website showcasing my skills, education, experience, and projects.
+>>>>>>> c5c72ab91be3ef63e28a326b1e7a266cc3c0c056
