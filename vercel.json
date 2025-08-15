@@ -1,12 +1,8 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/projects",
-      "dest": "/projects.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/projects",
+      "destination": "/projects.html"
     }
   ],
   "headers": [
