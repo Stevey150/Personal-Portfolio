@@ -308,10 +308,29 @@ section {
 }
 
 section.about,
-section.education,
 section.experience,
 section.languages {
     background: var(--bg-light);
+}
+
+/* Education Section with Campus Background */
+section.education {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('university_campus.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+}
+
+section.education .section-title {
+    color: white;
+}
+
+section.education .timeline-content {
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--text-color);
 }
 
 .section-title {
@@ -393,7 +412,7 @@ section.languages {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: var(--primary-color);
+    background: rgba(255, 255, 255, 0.8);
     transform: translateX(-50%);
 }
 
@@ -418,8 +437,10 @@ section.languages {
     width: 20px;
     height: 20px;
     background: var(--primary-color);
+    border: 3px solid white;
     border-radius: 50%;
     top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .timeline-item:nth-child(odd) .timeline-dot {
@@ -638,9 +659,20 @@ section.languages {
 }
 
 .language-flag {
-    font-size: 3rem;
-    color: var(--primary-color);
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.language-flag img {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .language-card h3 {
