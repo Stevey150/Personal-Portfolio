@@ -942,6 +942,72 @@ section.education .timeline-content {
     opacity: 0.8;
 }
 
+/* Organization Involvement Section */
+.organizations {
+    background: var(--bg-light);
+    padding: 60px 0;
+}
+
+.orgs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.org-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 2rem 2.5rem;
+    max-width: 350px;
+    min-width: 260px;
+    text-align: left;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.org-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: var(--shadow-lg);
+}
+
+.org-logo {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: auto;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.org-logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+    background: #fff;
+}
+
+.org-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    padding-left: 56px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.org-card p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
@@ -1059,6 +1125,13 @@ section.education .timeline-content {
         align-self: flex-end;
         width: 50px;
         height: 50px;
+    }
+
+    .org-logo {
+        width: 36px;
+        height: 36px;
+        top: 15px;
+        left: 15px;
     }
 }
 
