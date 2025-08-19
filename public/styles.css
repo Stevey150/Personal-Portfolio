@@ -353,6 +353,21 @@ section.education .timeline-content {
     border-radius: 2px;
 }
 
+/* Code background for section titles using codebackground.png */
+.code-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 70px;
+    background: url('codebackground.png') center center/cover no-repeat;
+    opacity: 0.18;
+    border-radius: 18px;
+    z-index: 0;
+    pointer-events: none;
+}
+
 /* About Section */
 .about {
     background: var(--bg-light);
@@ -706,15 +721,17 @@ section.education .timeline-content {
 
 /* Projects Page Styles */
 .projects-header {
+    position: relative;
     background: var(--gradient);
     color: white;
     padding: 120px 0 80px;
-    text-align: center;
 }
 
 .page-title {
     font-size: 3rem;
     margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
 }
 
 .page-subtitle {
